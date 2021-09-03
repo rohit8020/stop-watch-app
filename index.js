@@ -11,7 +11,14 @@ let minutes=00
 let hours=00
 let incrementer=00
 let _100parts=00
+let atStart=true
 
+if(atStart){
+  hrs.innerHTML=00
+  mins.innerHTML=00
+  scnds.innerHTML=00
+  _100prts.innerHTML=00
+}
 
 let startFunc=()=>{
   // console.log("Clicked Start")
@@ -40,9 +47,9 @@ start.addEventListener("click", startFunc)
 stp.addEventListener("click", stpFunc)
 reset.addEventListener("click", resetFunc)
 
-const timer=()=>{
-  interval=setInterval(startTimer, 10)
-}
+// const timer=()=>{
+//   interval=setInterval(startTimer, 10)
+// }
 
 const startTimer=()=>{
   
@@ -77,4 +84,4 @@ const startTimer=()=>{
   hrs.innerHTML=hours
 }
 
-timer();
+// timer();
